@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Clothing Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#designs">Designs</a></li>
+                <li><a href="#orders">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="designs">
+            <h2>Vote for Your Favorite Design</h2>
+            <div class="designs-container">
+                <div class="design" id="design1">
+                    <img src="design1.jpg" alt="Design 1">
+                    <h3>Design 1</h3>
+                    <button onclick="vote('design1')">Vote</button>
+                </div>
+                <div class="design" id="design2">
+                    <img src="design2.jpg" alt="Design 2">
+                    <h3>Design 2</h3>
+                    <button onclick="vote('design2')">Vote</button>
+                </div>
+                <div class="design" id="design3">
+                    <img src="design3.jpg" alt="Design 3">
+                    <h3>Design 3</h3>
+                    <button onclick="vote('design3')">Vote</button>
+                </div>
+            </div>
+        </section>
+        <section id="orders">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" required>
+                <label for="class">Class:</label>
+                <input type="text" id="class" required>
+                <label for="size">Size:</label>
+                <select id="size" required>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </select>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 School Clothing Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
